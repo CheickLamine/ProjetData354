@@ -29,7 +29,10 @@ Pour la mise j'ai fournit une classe Dataset qui me permet de mettre en place ma
 
 Par la suite j'ai défini une classe Net qui me permet que charger les poids pré-entraînées du modèle ResNet-18 tout en appliquant une couche de sortie de 3 neurones car nous avons 3 modalités à prédire. 
 
-J'ai fourni une fonction chec_acc qui m'a permi devoir l'évolution de la perte (CrossEntropyLoss) pour chaque epoch d'entrainement en fixant le seuil de perte à 1. Quand j'ai une perte inférieure à 1, je garde le poids associés à cette perte.
+J'ai fourni une fonction chec_acc qui m'a permi devoir l'évolution de la perte (CrossEntropyLoss) pour chaque epoch d'entrainement en fixant le seuil de perte à 1. Quand j'ai une perte inférieure à 1, je garde le poids associés à cette perte. 
+
+Je suis ensuite passé à l'évaluattion de mon modèle sur mon jeu de données test_set.csv qui provient du fichier Test.csv. J'ai pris soins de reécupérer les probabilités et les mettre dans un fichier soumission_Eff0.csv que j'ai renommé submission_file.csv dans le repos GitHub.
+
 
 
 
