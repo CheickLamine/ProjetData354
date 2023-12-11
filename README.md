@@ -21,7 +21,9 @@ II- IMPLEMENTATION ET ENTRAINEMENT DE MODELE
  Pour l'implémentation du modèle, j'ai importer les bibliothèque dédiées qui m'on permit dans un premier de faire des prétraîtements sur mes images afin   
 qu'elles puissent être mieux adptées à notre modèle.
 
-Pour la mise 
+Pour la mise j'ai fournit une classe Dataset qui me permet de mettre en place ma validation croisée, ensuite une fonction get_loaders qui tout en me permettant de d'appliquer mes traitements sur mes images repartie les images en blocs de validation test pour ma validation croisée.
+
+Par la suite j'ai défini une classe Net qui me permet que charger les poids pré-entraînées du modèle ResNet-18 tout en appliquant une couche de sortie de 3 neurones car nous avons 3 modalités à prédire. 
 
 
 
